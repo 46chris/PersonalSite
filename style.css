@@ -5,15 +5,20 @@
 }
 
 /*Introduction phrases and design*/
-h1{ 
-    font-size: clamp(25px, 5vw, 60px) !important; 
+.hi{ 
+    font-size: clamp(25px, 5vw, 50px) !important; 
     white-space: nowrap; 
 }
 
 .com { 
-    font-size: clamp(10px, 3vw, 50px) !important; 
+    font-size: clamp(10px, 3vw, 30px) !important; 
+    color: #B0CB90
 }
 
+.hi3 { 
+    font-size: clamp(5pt, 13pt, 15pt) !important; 
+    color: #B0CB90;
+}
 .name { 
     text-decoration-color: #70CBFF;
 }
@@ -55,14 +60,16 @@ mark:hover{
     background-size: cover; 
     background-origin: content-box; 
     background-position: center; 
-    margin-left: 40%; 
-    margin-right: 10%;
+    margin-left: 45%; 
+    margin-right: 20%; 
     height: 35vw; 
-    min-height: 400px; 
+    min-height: 350px; 
+    max-height: 500px; 
     padding-top: 50px; 
+
 }
 .text{ 
-    right: 60%; 
+    right: 85%; 
     position: relative; 
     top: 50%;
     transform: translateY(-50%);
