@@ -6,49 +6,50 @@
 
 /*Introduction phrases and design*/
 .hi{ 
-    font-size: clamp(25px, 5vw, 50px) !important; 
+    font-size: clamp(25pt, 5vw, 40pt) !important; 
     white-space: nowrap; 
 }
 
 .com { 
-    font-size: clamp(10px, 3vw, 30px) !important; 
-    color: #B0CB90
+    font-size: clamp(16pt, 3vw, 25pt) !important; 
+    color: #44C58D;
 }
 
 .hi3 { 
-    font-size: clamp(5pt, 13pt, 15pt) !important; 
-    color: #B0CB90;
-}
-.name { 
-    text-decoration-color: #70CBFF;
+    font-size: clamp(14pt, 2.5vw, 16pt) !important; 
+    color:#44C58D;
 }
 
-mark{
-    background-color: #C5ADFF !important;
+.name { 
+    text-decoration: none; 
+}
+
+.chris{
+    background-color: #C7F9CC !important;
     transition: .3s;
 }
 
-mark:hover{ 
-    background-color: #9B70FF !important; 
+.chris:hover{ 
+    background-color: #3EA38D !important; 
 }
 
 /*Cards*/
 .work1 { 
-    background-color: #ADE1FF !important;
+    background-color: #C7F9CC !important;
 }
 
 .work2 { 
-    background-color: #C5ADFF !important;
+    background-color: #82D9B3 !important;
 }
 
-.work1, .work2 { 
+.work1, .work2, .misc1, .misc2 { 
     border: none !important; 
     justify-content: center; 
     box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
 }
 
-.work1:hover { 
+.work1:hover, .misc1:hover, .misc2:hover { 
     transform: scale(1.01); 
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
@@ -114,3 +115,22 @@ mark:hover{
 }
 
 /*About section */
+.about { 
+    width: 90%; 
+}
+
+.misc1{ 
+    background-color: #dfc8fd !important;
+}
+
+.misc2 { 
+    background-color: #ad77f3 !important; 
+}
+
+.abtPic { 
+    max-width: 200px; 
+}
+
+.abtP mark {
+    background-color: #dfc8fd; 
+}
