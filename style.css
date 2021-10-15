@@ -4,6 +4,29 @@
     max-width: 1170px; 
 }
 
+.wider { 
+    max-width: 1200px !important;
+    padding: 0 5% !important;  
+}
+
+.widest { 
+    max-width: 1400px !important; 
+    padding: 0 2.5% !important; 
+}
+
+.medWrap { 
+    max-width: 1100px; 
+    padding: 0 10% !important; 
+    margin: 0 auto !important; 
+}
+hr { 
+    width: 80%; 
+    max-width: 1050px; 
+    margin: auto !important; 
+    height: 2px !important;
+    color: gray !important;  
+}
+
 /*Introduction phrases and design*/
 .hi{ 
     font-size: clamp(25pt, 5vw, 40pt) !important; 
@@ -35,7 +58,7 @@
 
 /*Cards*/
 .work1 { 
-    background-color: #C7F9CC !important;
+    background-color: #E3FFFF !important;
 }
 
 .work2 { 
@@ -94,16 +117,149 @@
 
 
 /*proj1.html*/
-/*top image*/
-.topImg { 
-    margin:0 !important; 
-    padding: 5% 20% !important; 
-    background: linear-gradient(to right, #85D2FF,#D6F0FF);
+.sketch { 
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
+button { 
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttonWrap { 
+    position: relative; 
+}
+
+.prevBut, .nextBut { 
+    position: absolute; 
+    top: 45%; 
+    width: min(8vw, 80px); 
+    z-index: 1;
+}
+
+.comp { 
+    border-radius: 10px; 
+    padding: 0 !important; 
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.prevBut img:hover { 
+    transform: scale(-1.3 ,1.3);
+    transition: .5s; 
+}
+.prevBut img { 
+    transform: scaleX(-1); 
+}
+
+.nextBut { 
+    right: 0%; 
+}
+.nextBut img:hover{ 
+    transform: scale(1.3); 
+    transition: .5s; 
+}
+
+.vid-active { 
+    border-radius: 30px; 
+    display: block !important; 
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    animation: fadeIn 1s ; 
+}
+
+.vid { 
+    display: none; 
+}
+
+.p1Title { 
+    font-size: 6vh; 
+    font-family: 'EB Garamond', serif;
+}
+
+.proj1 h3, .about h3,h4 { 
+    font-family: 'EB Garamond', serif;
+}
+
+.proj1 h3 { 
+    font-size: 4vh; 
+}
+
+.proj1 p, .about p{ 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px; 
+    line-height: 1.65em !important; 
+}
+
+.proj1 ol { 
+    line-height: 1.50em; 
+}
+
+.proj1Ul { 
+    font-family: 'Open Sans', sans-serif; 
+    width: 90% !important; 
+    margin: auto !important; 
+    font-size: 18px; 
+    line-height: 1.65em !important; 
+}
+
+.onwardTop { 
+    height: 75%; 
+    width: auto !important; 
+}
+
+.vtWrap { 
+    height: 50%; 
+    background-color: #E3FFFF;
+    border-radius: 30px; 
+    align-self: center; 
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 10px; 
+}
+.vidText { 
+    display: none; 
+}
+
+.vtWrap .active { 
+    display: block !important; 
+    animation: fadeIn 1s ; 
+}
+
+@keyframes fadeIn {
+    0% {
+       opacity: 0;
+
+    }
+    100% {
+       opacity: 1;
+
+    }
+ }
+
+ .bottomNav {  
+    text-decoration: none;  
+    border-bottom: 1px solid #000; 
+    padding-bottom: 3px; 
+    color: black;
+    font-weight: 500;
+    font-size: 20px; 
+    transition: background-position 0.3s ease-out;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #b9fcfc 50%);
+    background-size: 200% auto;
+    color: #222;
+ }
+
+ .bottomNav:hover { 
+    border-bottom: #b9fcfc;
+    color: black; 
+    background-position: -99.99% 0;
+    
+ }
 /*Body*/
 .color2 { 
-    background-color: #D6F0FF;
+    background-color: #E3FFFF;
 }
 
 .finalSketch { 
@@ -115,8 +271,8 @@
 }
 
 /*About section */
-.about { 
-    width: 90%; 
+.about h2 { 
+    font-family: 'Open Sans', sans-serif;
 }
 
 .misc1{ 
@@ -134,3 +290,4 @@
 .abtP mark {
     background-color: #dfc8fd; 
 }
+
