@@ -19,91 +19,181 @@
          <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     </head>
     <body class="proj2 projects">
-        <div class="container-fluid px-3 wrapper">
-            <!--Nav stuff -->
-            <div class="row pt-4">
-                <nav class="navbar navbar-expand-md navbar-light bg-transparent px-0">
-                    <div class="container-fluid px-4">
-                        <a class="navbar-brand" href="index.html">chrisyoon</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <!--Collapsible nav option-->
-                        <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <div class="background"> 
+            <div class="container-fluid px-4 wrapper correction">
+                <!--Nav stuff -->
+                <div class="row pt-4">
+                    <nav class="navbar navbar-expand-md navbar-light bg-transparent px-0">
+                        <div class="container-fluid px-4">
+                            <a class="navbar-brand" href="index.html">chrisyoon</a>
+                            <button class="navbar-toggler" onclick="this.classList.toggle('change')" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </button>
+                            <!--Collapsible nav option-->
+                            <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Work</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="proj1.html">Onwards</a>
-                                        <a class="dropdown-item">Under construction</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" href="about.html">About </a>
-                                </li>
-                            </ul>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Work</a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="proj1.html">Onwards</a>
+                                            <a class="dropdown-item">Under construction</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                    </nav>
+                </div>
+
+                <div class="row title px-3">
+                    <h1 class="pt-5 projTitle">Joe's Portfolio Site</h1>
+                    <h6 class="ms-1">Art portfolio programmed for client</h6>
+                </div>
+            </div>
+
+            <div class="container-fluid p-5 wrapper">
+                <div class="row mx-0 mx-sm-4 py-5">
+                    <div class="col-6">
+                        <img class="w-100" src="imgs/joeArtPort/titlePic1.jpg">
+                    </div> 
+
+                    <div class="col-6"> 
+                        <img class="w-100" src="imgs/joeArtPort/titlePic2.jpg">
                     </div>
-                </nav>
+                </div>
+
+                <div class="row px-3 pt-5">
+                    <div class="col-12 col-sm-8">
+                        <h4>Overview</h4>
+                        <p> This site was comissioned by a friend who wanted to digitalize his art portfolio. 
+                        </p>
+                        <h4>Background</h4>
+                        <p> Lorem Ipsum Lorem ipsum  Lorem Ipsum Lorem ipsum  Lorem Ipsum Lorem ipsum  Lorem Ipsum Lorem ipsum 
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <h4>Skills used</h4>
+                        <ul>
+                            <li>Designing</li>
+                            <li>Wireframe / Figma Prototyping</li>
+                            <li>CSS / HTML / Javascript</li>
+                        </ul>
+
+                        <h4>Timeline</h4>
+                        <p>September 25, 2021 - October 10, 2021</p>
+                    </div>
+                </div> 
             </div>
 
-            <div class="row title px-3">
-                <h1 class="pt-5 projTitle">Joe's Portfolio Site</h1>
-                <h6 class="ms-1">Art portfolio programmed for client</h6>
-            </div>
-        </div>
+            <hr>
+            
+            <div class="container-fluid py-5 px-0">
+                <div class="row medWrap pb-5">
+                    <h3>Defining the Product</h3>
+                    <p class="pt-3"> During the first meeting with the client, I aimed to define the key features of his website. 
+                        As he is still a student, he emphasized that the site must contain a contact form and make his socials easily 
+                        accessible. Aside from that, we added an about page as that is the standard-fare for these portfolio sites. 
+                    </p>
 
-        <div class="container-fluid p-5 wrapper">
-            <div class="row mx-0 mx-sm-4 py-5">
-                <div class="col-6">
-                    <img class="w-100" src="imgs/joeArtPort/titlePic1.jpg">
+                    <h4 class="pt-4">Mood / Flair</h4>
+                    <p>The client was unsure on what kind of atmosphere and flair he wanted on his site. To give him some ideas, 
+                        I compiled others' portfolio sites and presented it to him to see if there was any layout, color scheme, or design 
+                        choices he liked. Unfortunately, this didn't change much and he suggested I make the website as simple and plain 
+                        as possible. I stupidly listened and did just that. 
+                    </p>
+                </div>
+
+                <div class="row medWrap py-5"> 
+                    <h3>Prototyping</h3>
+                    <p> After looking at the simplest of the reference sites, I went to Figma to prototype his website. 
+                        I created three layouts all adhering to a monochromatic color scheme to keep in line with his wishes for a 
+                        simple site and ensure that his artwork was the focal point of the site. 
+                    </p>
+                </div>
+                <div class="row widest mx-auto">
+                    <img class="w-100" src="imgs/joeArtPort/Prototype.PNG">
+                </div>
+                <div class="row medWrap py-5"> 
+                    <p>So I set up a meeting and presented these layouts to the client. He said he enjoyed the simple look of his site 
+                        and began to pick and choose elements he liked from each one. He said he liked the layout of the art from options 
+                        1 and 3 (leftmost and rightmost layouts), the about section of option 1 (leftmost), the navbar of options 1 and 2 (leftmost and 
+                        middle), and the color scheme used in option 1 (leftmost). Using his feedback, I began creating the final prototype. 
+                    </p>
+                    <h4 class="pt-4"> Final Prototype</h4>
+                    <p>Ultimately, I chose to go for a single page website to adhere to the client's wishes of a simple site. Other than that, I just 
+                        took out the pieces he enjoyed from the previous prototypes and made this one
+                    </p>
+                </div>
+                <div class="row wider mx-auto pb-5"> 
+                    <img class="w-100" src="imgs/joeArtPort/finalProto.PNG">
+                </div>
+
+                <div class="row medWrap mx-auto py-5"> 
+                    <h3>First Deployment</h3> 
+                    <p>Because this was just going to be a static webpage with little changes in the future, I chose to deploy the site on 
+                        github pages (also it's free and I'm broke). 
+                    </p>
+                </div>
+                <div class="row wider mx-auto pb-5"> 
+                    <img class="w-100" src="imgs/joeArtPort/vids/firstDVid.gif"> 
+                </div>
+                <div class="row medWrap mx-auto py-5">
+                    <h5>Learning</h5>
+                    <p>My biggest issue with this website was overengineering. I don't know if it was because I was just coming off of finishing 
+                        developing an app for a class or I was just extra paranoid but I was so obsessed with optimizing the speed of the website. 
+                        I tested all the different ways to instantiate the images on the DOM in order to figure out which was the fastest when in reality, 
+                        it really didn't make a difference. <br><br>
+                        I also devoted far too much time trying to make the website as future-proof as possible. This entailed trying to find all the "backendless" (without backend cause github pages doesn't support it)
+                        ways to make adding in future art pieces as painless as possible. Without going into detail, this was also a waste of time considering that simply
+                        adding in the image to the repo and then adding in an img tag to the html took < 1 minute. 
+                    </p>
                 </div> 
 
-                <div class="col-6"> 
-                    <img class="w-100" src="imgs/joeArtPort/titlePic2.jpg">
-                </div>
-            </div>
-
-            <div class="row px-3 pt-5">
-                <div class="col-12 col-sm-8">
-                    <h4>Overview</h4>
-                    <p> This site was comissioned by a friend who wanted to digitalize his art portfolio. 
+                <div class="row medWrap mx-auto py-5"> 
+                    <h3>Second Deployment</h3>
+                    <p class="pb-4">The client ended up being happy with the first deployment. I was not. The page was far too dull and I thought, was doing a 
+                        disservice to his artwork. So I offered to program a new site for him at no extra cost. If he didn't like the new one, 
+                        I told him he could simply keep the old one. 
                     </p>
-                    <h4>Background</h4>
-                    <p> Lorem Ipsum Lorem ipsum  Lorem Ipsum Lorem ipsum  Lorem Ipsum Lorem ipsum  Lorem Ipsum Lorem ipsum 
+
+                    <h4>Redesign </h4>
+                    <p>It isn't good practice, but seeing as though I had a good idea of what I wanted his new site to look like, I just went straight to coding it up. <br><br>
+                        My biggest gripe with the first site was the ugly navbar at the top so I decided to change it for a side navigation bar with a "logo" that I designed myself 
+                        utilizing some of his older art pieces as the background. I also lightened the color scheme because the black seemed too dreary. Finally, I
+                        opted for a multi-page site because it kept everything organized and opened up the possibility to give the site a bit more personality. <br><br>
+                        Feel free to give his site a visit <a href="https://46chris.github.io/JoeSite/">here</a>!
+                    </p> 
+                </div>
+                <div class="row widest mx-auto">
+                    <img class="w-100" src="imgs/joeArtPort/secondDeploy.jpg">
+                </div>
+
+                <div class="row medWrap mx-auto py-5"> 
+                    <h3>Final Thoughts</h3>
+                    <p>My biggest takeaways with this project was to always take what the client wants with a grain of salt and to not overengineer things. 
+                        Despite recognizing that what the client wanted would look sub-par, I created the site anyways because I thought it best not to question 
+                        what the client wants. After redesigning the site and seeing the client much happier with a layout that I thought would look better, I learned that 
+                        my opinion as a developer holds weight and shouldn't always be ignored in favor of the client's. As for over-engineering, I think this stems from 
+                        my naturally anxious personality. I'm sure that as a I learn more about the ins and outs of web development, this will get better. 
+                        <br><br>
+                        As a whole though, I'm happy with how my first client's site turned out and can't wait to start on more. 
+
+
                     </p>
+                    <div class="col-12 pt-3">
+                        <a class="funAnchor" href="index.html">Back Home</a>
+                    </div> 
                 </div>
-
-                <div class="col-12 col-sm-4">
-                    <h4>Skills used</h4>
-                    <ul>
-                        <li>Designing</li>
-                        <li>Wireframe / Figma Prototyping</li>
-                        <li>CSS / HTML / Javascript</li>
-                    </ul>
-
-                    <h4>Timeline</h4>
-                    <p>September 25, 2021 - October 10, 2021</p>
-                </div>
-            </div> 
-        </div>
-
-        <hr>
-        
-        <div class="container-fluid py-5 px-0">
-            <div class="row medWrap">
-                <h3>Defining the Product</h3>
-                <p class="pt-3"> During the first meeting with the client, I aimed to define the key features of his website. 
-                    As he is still a student, he emphasized that the site must contain a contact form and make his socials easily 
-                    accessible. Aside from that, we added an about page as that is the standard-fare for these portfolio sites. 
-                </p>
-
-                <h4 class="pt-4">Sketches</h4>
-                <p></p>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
