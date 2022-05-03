@@ -50,7 +50,7 @@ hr{
 
 /*Text Formatting*/
 h3 {
-    font-size: 3.5rem !important;
+    font-size: 2.7rem !important;
 }
 h4 { 
     font-size: 2rem !important; 
@@ -59,7 +59,7 @@ h5 {
     font-size: 1.7rem !important; 
 }
 h6 { 
-    font-size: 1.25rem !important; 
+    font-size: 1.00rem !important; 
 }
 p{
     font-family: 'Open Sans', sans-serif;
@@ -244,25 +244,25 @@ ul {
 }
 
 /*Mobile for home page*/
-@media screen and (max-width: 576px){
-    /* .intro {
-        margin-left: 0 !important;
-        background-image: none;
-    } */
-    /* h1 {
-        font-size: 250% !important;
-    } */
-    /* .com {
-        font-size: 150% !important;
+@media screen and (max-width: 766px){
+    .headerImg { 
+        margin: 30px auto 0 auto !important; 
+        width: 300px !important; 
     }
-    .text{
-        left: 0;
-    } */
 }
 
 /*proj1.html*/
 .title { 
     margin-top: 100px !important; 
+    max-width: 1170px; 
+    padding: 0 10% !important; 
+}
+.desktop { 
+    max-width: 1300px; 
+    padding: 0 2% !important; 
+}
+.dHeader { 
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
 }
 .projTitle, 
 h3,
@@ -297,7 +297,6 @@ h4{
     max-width: 1170px;
     margin: auto !important;
 }
-
 
 /*Vid button stuff*/
 button {
@@ -336,7 +335,7 @@ button {
 .vid-active {
     border-radius: 30px;
     display: block !important;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
     animation: fadeIn 1s ;
 }
 .vid {
