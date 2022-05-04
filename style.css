@@ -25,6 +25,10 @@
     padding: 0 5% !important;
 }
 
+.reduce { 
+    padding: 0 8% !important; 
+}
+
 .widest {
     max-width: 1400px !important;
     padding: 0 2.5% !important;
@@ -56,7 +60,7 @@ h4 {
     font-size: 2rem !important; 
 }
 h5 { 
-    font-size: 1.7rem !important; 
+    font-size: 1.4rem !important; 
 }
 h6 { 
     font-size: 1.00rem !important; 
@@ -398,3 +402,9 @@ button {
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
+/*proj2*/
+.persona{ 
+    max-width: 175px !important;
+    margin: auto !important; 
+    display: block !important;  
+}
