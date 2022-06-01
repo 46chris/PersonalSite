@@ -97,47 +97,26 @@
             <div class="container-fluid py-5 px-0">
                 <div class="row medWrap">
                     <h3 class="pt-4">Bullet Journal Research</h3>
-                    <p> Our first order of action was researching the Bullet Journal domain. After reading through blog posts, lavish product descriptions from companies shilling their online BuJo's, and 
-                        insights from a handfule of BuJo users (COVID restrictions), we identified our philosophy and statement of purpose for our app <br><br>
+                    <p> Our first order of action was researching the Bullet Journal domain. After reading through blog posts, BuJo product descriptions, and 
+                        insights from a handful of BuJo users (COVID restrictions), we articulated our BuJo philosophy which would guide our development decisions. <br><br>
                         
                         <b>Philosophy</b>: A BuJo provides a single place for keeping track of events, tasks, and notes. Rapid logging, the language of the BuJo, makes the content easy to read. A color scheme 
-                        and media content makes the space more personal. <br><br>
-                        <b>Statement of Purpose</b>: Our project aims to create a digital version of the typically analog bullet journal while maintaining the same level of function and personality.
+                        and media content makes the space more personal. 
                     </p>
-                </div>
-
-                <div class="row medWrap">
-                    <h3 class="pt-4">Plan the Minimum Hope for More</h3>
-                    <p class="pt-3"> As a group of 9 inexperienced developers, we thought it best to nail down the essential featuers of our app and then 
-                        move onto peripheral features if we had time. Based on what we learned in our preliminary research, we decided that the four features below 
-                        were essential to the BuJo experience. 
-                    </p>
-                </div>
-                <div class="row wider pt-5 mx-lg-auto mx-5">
-                    <div class="col-6 col-lg-3 mb-4 mb-lg-0">
-                        <h6 class="mb-3">Mood tracker</h6>
-                        <img class="w-100 sketch" src="imgs/23andMe/mood.png">
-                    </div>
-    
-                    <div class="col-6 col-lg-3 mb-4 mb-lg-0">
-                        <h6 class="mb-3">Transferable bullets</h6>
-                        <img class="w-100 sketch" src="imgs/23andMe/transfer.png">
-                    </div>
-
-                    <div class="col-6 col-lg-3 mb-4 mb-lg-0">
-                        <h6 class="mb-3">Month, Week, Day Views</h6>
-                        <img class="w-100 sketch" src="imgs/23andMe/views.png">
-                    </div>
-    
-                    <div class="col-6 col-lg-3 mb-4 mb-lg-0">
-                        <h6 class="mb-3">3 Bullet Types</h6>
-                        <img class="w-100 sketch" src="imgs/23andMe/bullets.png">
-                    </div>
                 </div>
 
                 <div class = "row medWrap pt-5">
-                    <h3 class="pt-4">Personas</h3>
-                    <p>Before starting development, our team created 3 personas to keep us within a user-focused development mindset. </p>
+                    <h3 class="pt-4">User Research</h3>
+                    <p>Due to stringent COVID restrictions and a tight course schedule that didn't factor in preliminary user research, we were unable to do thorough user research 
+                        into current online BuJo users. We were able to find a handful of users amidst our close family / friends, but much of our findings on pain points with current
+                        online BuJo solutions were found after using them ourselves. Some of the most common <b>pain points</b> were: </p>
+                        <b><ul class="ms-5">
+                            <li>Hard-to-use calendar views (month, week, day)</li>
+                            <li>Unintuitive transferable bullets</li>
+                            <li>Feature bloat cluttering the UI, necessitating long onboarding process</li>
+                        </ul></b>
+                    <h4 class="pt-4">Personas</h4>
+                    <p>Using what little user research we had, we also created 3 personas to keep us within a user-focused development mindset. </p>
                 </div>
 
                 <div class="row wider pt-5 mx-lg-auto mx-4">
@@ -169,6 +148,40 @@
                         </p>
                     </div>
                 </div>
+
+                <div class="row medWrap">
+                    <h3 class="pt-4">Plan the Minimum, Hope for More</h3>
+                    <p class="pt-3"> Now that we'd familiarized ourselves with the domain and common issues in it, we began planning our development cycle.
+                        Because we all had limited development experience, we thought it best to implement the essential functionalities of a BuJo before 
+                        moving onto any extra features. 
+                        <br><br>
+                        Based on the philosophy we defined, we decided that a mood tracker, transferable bullets, multiple 
+                        calendar views, and 3 different bullet types were enough to capture the essence of a BuJo. To address the pain points we found during user research,
+                        we limited features to keep our app simple and elected to implement drag-and-droppable bullets to make transferring bullets as intuitive 
+                        as possible.
+                    </p>
+                </div>
+                <div class="row wider pt-5 mx-lg-auto mx-5">
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                        <h6 class="mb-3">Mood tracker</h6>
+                        <img class="w-100 sketch" src="imgs/23andMe/mood.png">
+                    </div>
+    
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                        <h6 class="mb-3">Transferable bullets</h6>
+                        <img class="w-100 sketch" src="imgs/23andMe/transfer.png">
+                    </div>
+
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                        <h6 class="mb-3">Month, Week, Day Views</h6>
+                        <img class="w-100 sketch" src="imgs/23andMe/views.png">
+                    </div>
+    
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                        <h6 class="mb-3">3 Bullet Types</h6>
+                        <img class="w-100 sketch" src="imgs/23andMe/bullets.png">
+                    </div>
+                </div>
             </div>
     
             <div class="container-fluid px-0 pb-4">
@@ -178,13 +191,8 @@
                          I was a part of a group of 4 designers in charge of designing the UI for the BuJo. Our initial designs (below) 
                          contained feautres such as customization of the background, drawing, and complex user statistics. Though we thought 
                          these features made our UI 'look cool' they were wholly unrealistic and much of our low-fi designs had to be scrapped as a result. 
-                         On the bright side though, the general look of our pages (side navbar and daily page) remained largely unchanged up through the final 
-                         prototype. 
-                         <br><br>
-
-                         Although a lot of work was for nothing, this design iteration was a good learning experience. I was reminded that user experience and feasability 
-                         must always be balanced. I think that my group was a bit over eager to create an impressive design which made us overlook the fact that 
-                         implementing many of these features required far more work than we had time for.
+                         On the bright side, the general look of our pages (side navbar and daily page) remained largely unchanged up through the final 
+                         prototype. Although a lot of work was for nothing, this design process was a good learning experience.
                     </p>
                 </div>
 
@@ -211,31 +219,27 @@
                 <div class="row medWrap">
                     <h3 class="pb-3">Ask for Second Opinions</h3>
                     <p>
-                        In our final iteration of our BuJo design, we decided to present our prototype to our team and professor. Though everybody on the team generally enjoyed 
-                        the look and feel of the prototype, our professor told us that the intentions of some pages were unclear and the app as a whole looked far too 'Christmasy'. 
-                        Since our professor was the sole stakeholder in this practicum course, we immediately worked to address some of his concerns. 
-                        First, we overhauled the theme to a less-diverse color palette as our professor denoted the previous one seemed a bit 'cluttered'. Then, we increased the contrast 
+                        In the final iteration of our BuJo design, we presented our prototype to our team and professor. Though the team enjoyed 
+                        the look of the prototype, our professor felt that the pages' intentions were often unclear and the app looked far too 'Christmasy'. 
+                        Since our professor was the sole stakeholder in this practicum course, we had no choice but to overhaul our designs.
+                        First, we switched the theme to a less-diverse color palette, then increased the contrast 
                         on UI elements to make interactable elements clearer for the user. 
-                        <br><br>
-                        Admittedly, the design overhaul didn't really 'overhaul' the design as much as it could've. This was mainly because coding had to start as soon as possible and we believed 
-                        that the design could be reworked as we coded frontend elements. This ended up being impossible given the time crunch and was an important reminder that 
-                        designs should be tested outside of the team echo chamber.  
-
-                        <br><br>
-
-
                     </p>
-                </div>
-
-                <div class="row wider mx-auto py-3 reduce">
-                    <div class="col-lg-6 col-12 mb-4">
+                    <div class="col-12 mb-4">
                         <h5 class="mb-3">Before </h5>
                         <img class="w-100" src="imgs/23andMe/Before.png">
                     </div>
-                    <div class="col-lg-6 col-12 mb-4">
+                    <div class="col-12 mb-4">
                         <h5 class="mb-3">After </h5>
                         <img class="w-100" src="imgs/23andMe/After.png">
                     </div>
+                    <p>
+                        Admittedly, the design 'overhaul' didnt' change much of the existing design. We were strapped for time and had to begin coding. We also believed 
+                        that the design could be reworked as we coded frontend elements. This ended up being impossible given the time crunch and was an important reminder that 
+                        designs should be tested outside of the team echo chamber.  
+                    </p>
+
+
                 </div>
             </div>
     
@@ -289,17 +293,18 @@
                     <div class="col-12"> 
                         <h3>Reflection</h3> 
                         <p class="pt-3"> 
-                            As a whole, I was happy with how the project turned out. This was the first time I've had to implement a server and backend to an app and the 
-                            database and authentication services works with minimal bugs even today. Even though a lot of the frontend logic could be optimized and organized 
-                            much better, it culminates into a very usable UI with minimal bugs or errors. 
+                            As a whole, I was happy with how the project turned out.
+                            The database and authentication services works with minimal bugs. 
+                            Even though a lot of the frontend logic could be optimized and organized 
+                            better, it culminates into a very usable UI without glaring errors. 
                             <br><br> 
 
-                            If I were to have had a couple more weeks with the project, I'd probably spend most of it redesigning the UI. I think that the blue background seems 
-                            a bit overwhelming and the top bar with the logo and profile seems a bit unpolished. Furthermore, the date switcher at the top of the 
-                            daily view looks a bit rough and the collapsible side bar's animation and placement is a bit awkward. 
+                            If I were to have had a couple more weeks with the project, I'd probably spend most of it redesigning the UI. I think the blue background is 
+                            a bit overwhelming and the top bar's aesthetic and logo is a bit unpolished. Furthermore, the date switcher at the top of the 
+                            daily view looks out of place and the collapsible side bar's animation/placement is awkward. 
                             <br><br>
 
-                            Nevertheless, this project was an indispensible coding learning experience that really developed my understanding of vanilla Javascript 
+                            Nevertheless, this project was an indispensible learning experience that developed my understanding of vanilla Javascript 
                             and server-side coding. It was a great introduction to Agile methodologies which has been invaluable in my internships at 
                             SmartTwigs and United Health Group. 
                         </p>
